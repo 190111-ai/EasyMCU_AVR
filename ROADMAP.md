@@ -20,16 +20,17 @@ This document outlines the milestones for transforming the existing AVR-based US
 
 ### v0.4: Web Server
 - Basic web server setup
-- Responsive WebUI (Mobile and Desktop)
+- Responsive WebUI (Mobile and Desktop) with Nintendo Switch UI theme
 - Dashboard (controller status, battery, IP)
 - Settings page (WiFi, factory reset, etc.)
 
 ### v0.5: Amiibo Implementation
-- Amiibo page on WebUI (upload, delete, rename, select active dump)
+- Amiibo page on WebUI (upload, delete, rename, select active dump, amiibo status)
 - Implementation of Amiibo logic and spoofing
 
 ### v0.6: Controller Implementation
 - Bluetooth Classic support for Joy-Con/Pro Controller emulation
+- Physical hardware buttons mapping (BTN A: start pairing, BTN B: change controller type)
 - WebSocket controller backend
 - Controller page on WebUI (Virtual controls: A, B, X, Y, D-pad, L, R, ZL, ZR, Plus, Minus, Home, Capture, analog sticks)
 
@@ -38,6 +39,6 @@ This document outlines the milestones for transforming the existing AVR-based US
 - Settings page integration for OTA
 
 ### v1.0: Production Release
-- Display polish (Booting, Pairing, Waiting, Connected, Disconnected, Sending Amiibo, Error, Battery, IP, Current Amiibo)
+- Display polish (Booting, Standby, Pairing, Waiting for Switch, Connected, Disconnected, Sending Amiibo, Error, Battery, IP, Current Amiibo)
 - Final testing and bug fixes
 - Production release

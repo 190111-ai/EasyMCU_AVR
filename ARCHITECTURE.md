@@ -55,6 +55,6 @@ There is no Amiibo support, NFC handling, or related data structures in the curr
 The following required source code is missing from the repository:
 1. **Bluetooth Classic Stack / Implementation:** For Joy-Con / Pro Controller emulation over wireless.
 2. **Amiibo Implementation:** NFC/Amiibo data handling and transmission over Bluetooth.
-3. **ESP32 Port / HAL:** Abstraction layer for ESP32 timers, GPIO, and peripherals.
-4. **LittleFS & WebUI:** Web server, REST API, and filesystem code.
-5. **Display Drivers:** ST7789 LCD support for the M5StickC Plus 2.
+3. **ESP32 Port / HAL:** Abstraction layer for ESP32 timers, GPIO, and peripherals, including physical button mappings (e.g., BTN A for pairing, BTN B for controller type switching).
+4. **LittleFS & WebUI:** Web server, REST API, filesystem code, and a Switch-themed responsive WebUI framework.
+5. **Display Drivers:** ST7789 LCD support for the M5StickC Plus 2 to show system statuses (Booting, Standby, Pairing, Connected, etc.).
