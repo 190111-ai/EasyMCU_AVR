@@ -7,7 +7,7 @@ inline void disable_rx_isr(void)
     UCSR1B &= ~_BV(RXCIE1);
 }
 
-inline void enable_rx_isr(void)
+void enable_rx_isr(void)
 {
     UCSR1B |= _BV(RXCIE1);
 }

@@ -1,6 +1,6 @@
 #include "System.h"
 
-inline void timer0_init(void)
+void timer0_init(void)
 {
     // set prescaler to 64 and start the timer
     TCCR0B |= (_BV(CS01)) | (_BV(CS00)); // 16,000,000(F_CPU) / 64  = 250,000 Hz

@@ -93,7 +93,7 @@ void EVENT_USB_Device_ControlRequest(void)
 }
 
 // Prepare the next report for the host.
-inline void GetNextReport(USB_JoystickReport_Input_t *const ReportData)
+void GetNextReport(USB_JoystickReport_Input_t *const ReportData)
 {
 	memcpy(ReportData, &next_report, sizeof(USB_JoystickReport_Input_t));
 }
